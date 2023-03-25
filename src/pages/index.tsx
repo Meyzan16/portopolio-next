@@ -7,6 +7,10 @@ import {useState} from "react"
 import {AiFillLinkedin, AiFillInstagram , AiFillGithub, AiFillMail} from "react-icons/ai"
 import deved from "../../public/dev-ed-wave.png"
 
+import design from "../../public/design.png"
+import code from "../../public/code.png"
+import consulting from "../../public/consulting.png"
+
 export default function Home() {
   const [darkmode, setDarkMode] = useState(false);
   return (
@@ -67,7 +71,39 @@ export default function Home() {
                 products for both business and cunsumer use
               </p>
             </div>
-            </section>
+            <div className="lg:flex gap-6">
+                <div className="p-10 my-10   rounded-lg shadow-xl text-center   hover:bg-teal-500 group dark:bg-white dark:hover:bg-teal-500 ">
+                  <Image src={design}  width={100} height={100} alt="design" className="mx-auto" />
+                  <h3 className="text-lg font-medium pt-8 pb-2    group-hover:text-white">Beutiful Designs</h3>
+                  <p className="py-2 group-hover:text-white">Creating elegant designs suited for your needs design theory</p>
+                  <h4 className=" text-teal-500 group-hover:text-white">Design tools I use</h4>
+                  <p className="text-gray-800 mt-2 group-hover:text-white">React</p>
+                  <p className="text-gray-800 mt-2 group-hover:text-white">Figma</p>
+                  <p className="text-gray-800 mt-2 group-hover:text-white">Tailwind</p>
+                </div>
+
+                <div className="text-center shadow-xl p-10 rounded-lg my-10  hover:bg-teal-500 group dark:bg-white dark:hover:bg-teal-500 ">
+                  <Image src={code}  width={100} height={100} alt="design" className="mx-auto" />
+                  <h3 className="text-lg font-medium pt-8 pb-2  group-hover:text-white">Beutiful Designs</h3>
+                  <p className="py-2 group-hover:text-white">Creating elegant designs suited for your needs design theory</p>
+                  <h4 className="text-teal-500 group-hover:text-white">Design tools I use</h4>
+                  <p className="text-gray-800 mt-2 group-hover:text-white">React</p>
+                  <p className="text-gray-800 mt-2 group-hover:text-white">Figma</p>
+                  <p className="text-gray-800 mt-2 group-hover:text-white">Tailwind</p>
+                </div>
+            
+                <div className="text-center shadow-xl p-10 rounded-lg my-10 hover:bg-teal-500 group dark:bg-white dark:hover:bg-teal-500">
+                  <Image src={consulting}  width={100} height={100} alt="design" className="mx-auto" />
+                  <h3 className="text-lg font-medium pt-8 pb-2">Beutiful Designs</h3>
+                  <p className="py-2  group-hover:text-white">Creating elegant designs suited for your needs design theory</p>
+                  <h4 className="text-teal-500  group-hover:text-white">Design tools I use</h4>
+                  <p className="text-gray-800 mt-2  group-hover:text-white">React</p>
+                  <p className="text-gray-800 mt-2  group-hover:text-white">Figma</p>
+                  <p className="text-gray-800 mt-2  group-hover:text-white">Tailwind</p>
+                </div>
+
+            </div>
+        </section>
       </main>
     </>
   )
