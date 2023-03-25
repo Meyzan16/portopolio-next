@@ -14,6 +14,11 @@
   @apply flex justify-between;
 }
 
+
+.resume {
+  @apply bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-lg ml-8;
+}
+
 /* dibawah navbar */
 .name {
   @apply font-bold text-4xl text-teal-600 py-2 sm:text-5xl
@@ -23,4 +28,21 @@
 
 .logososmed{
   @apply hover:text-teal-600;
+}
+
+.imageService {
+  @apply p-10 my-10   rounded-lg shadow-xl text-center hover:bg-teal-500  dark:bg-white dark:hover:bg-teal-500 ;
+}
+.h3ImageService{
+@apply text-lg font-medium pt-8 pb-2 text-gray-800 mt-2   group-hover:text-white;
+}
+
+.paragrafImage {
+  @apply text-gray-800 mt-2 group-hover:text-white;
+}
+
+.imagePortopolio {
+  @apply w-full rounded-lg overflow-hidden bg-teal-300  shadow-xl
+                                shadow-slate-700 
+                          hover:scale-105 transition-all duration-500 ;
 }

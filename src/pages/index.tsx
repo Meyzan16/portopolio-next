@@ -29,7 +29,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className=" bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
           <section className="min-h-screen pt-10 pb-32">
             <nav className="flex justify-between">
               <h1 className="text-gray-800 text-xl font-burtons dark:text-white">developyed</h1>
@@ -37,7 +37,7 @@ export default function Home() {
 
                   <BsFillMoonStarsFill className="text-gray-800 cursor-pointer text-2xl dark:text-teal-600"  onClick={() => setDarkMode(!darkmode)}/>
                 <li>
-                  <a className="bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-lg ml-8" href="#">
+                  <a className={styles.resume} href="#">
                     Resume</a></li>
               </ul>
             </nav>
@@ -80,34 +80,34 @@ export default function Home() {
                 </p>
               </div>
               <div className="lg:flex gap-6">
-                  <div className="p-10 my-10   rounded-lg shadow-xl text-center   hover:bg-teal-500 group dark:bg-white dark:hover:bg-teal-500 ">
+                  <div className="p-10 my-10   rounded-lg shadow-xl text-center hover:bg-teal-500  dark:bg-white dark:hover:bg-teal-500">
                     <Image src={design}  width={100} height={100} alt="design" className="mx-auto" />
-                    <h3 className="text-lg font-medium pt-8 pb-2 text-gray-800 mt-2   group-hover:text-white">Beutiful Designs</h3>
-                    <p className="text-gray-800 mt-2 py-2 group-hover:text-white">Creating elegant designs suited for your needs design theory</p>
-                    <h4 className=" text-teal-500 group-hover:text-white">Design tools I use</h4>
-                    <p className="text-gray-800 mt-2 group-hover:text-white">React</p>
-                    <p className="text-gray-800 mt-2 group-hover:text-white">Figma</p>
-                    <p className="text-gray-800 mt-2 group-hover:text-white">Tailwind</p>
+                    <h3 className={styles.h3ImageService}>Beutiful Designs</h3>
+                    <p className={styles.paragrafImage}>Creating elegant designs suited for your needs design theory</p>
+                    <h4 className={styles.paragrafImage}>Design tools I use</h4>
+                    <p className={styles.paragrafImage}>React</p>
+                    <p className={styles.paragrafImage}>Figma</p>
+                    <p className={styles.paragrafImage}>Tailwind</p>
                   </div>
 
-                  <div className="text-center shadow-xl p-10 rounded-lg my-10  hover:bg-teal-500 group dark:bg-white dark:hover:bg-teal-500 ">
+                  <div className="p-10 my-10   rounded-lg shadow-xl text-center hover:bg-teal-500  dark:bg-white dark:hover:bg-teal-500">
                     <Image src={code}  width={100} height={100} alt="design" className="mx-auto" />
-                    <h3 className="text-gray-800 mt-2 text-lg font-medium pt-8 pb-2  group-hover:text-white">Beutiful Designs</h3>
-                    <p className="text-gray-800 mt-2 py-2 group-hover:text-white">Creating elegant designs suited for your needs design theory</p>
-                    <h4 className="text-teal-500 group-hover:text-white">Design tools I use</h4>
-                    <p className="text-gray-800 mt-2 group-hover:text-white">React</p>
-                    <p className="text-gray-800 mt-2 group-hover:text-white">Figma</p>
-                    <p className="text-gray-800 mt-2 group-hover:text-white">Tailwind</p>
+                    <h3 className={styles.h3ImageService}>Beutiful Designs</h3>
+                    <p className={styles.paragrafImage}>Creating elegant designs suited for your needs design theory</p>
+                    <h4 className={styles.paragrafImage}>Design tools I use</h4>
+                    <p className={styles.paragrafImage}>React</p>
+                    <p className={styles.paragrafImage}>Figma</p>
+                    <p className={styles.paragrafImage}>Tailwind</p>
                   </div>
               
-                  <div className="text-center shadow-xl p-10 rounded-lg my-10 hover:bg-teal-500 group dark:bg-white dark:hover:bg-teal-500">
+                  <div className="p-10 my-10   rounded-lg shadow-xl text-center hover:bg-teal-500  dark:bg-white dark:hover:bg-teal-500">
                     <Image src={consulting}  width={100} height={100} alt="design" className="mx-auto" />
-                    <h3 className="text-gray-800 mt-2text-lg font-medium pt-8 pb-2">Beutiful Designs</h3>
-                    <p className="text-gray-800 mt-2 py-2  group-hover:text-white">Creating elegant designs suited for your needs design theory</p>
-                    <h4 className="text-teal-500  group-hover:text-white">Design tools I use</h4>
-                    <p className="text-gray-800 mt-2  group-hover:text-white">React</p>
-                    <p className="text-gray-800 mt-2  group-hover:text-white">Figma</p>
-                    <p className="text-gray-800 mt-2  group-hover:text-white">Tailwind</p>
+                    <h3 className={styles.h3ImageService}>Beutiful Designs</h3>
+                    <p className={styles.paragrafImage}>Creating elegant designs suited for your needs design theory</p>
+                    <h4 className={styles.paragrafImage}>Design tools I use</h4>
+                    <p className={styles.paragrafImage}>React</p>
+                    <p className={styles.paragrafImage}>Figma</p>
+                    <p className={styles.paragrafImage}>Tailwind</p>
                   </div>
 
               </div>
@@ -130,35 +130,27 @@ export default function Home() {
               <div className="w-full  md:grid md:grid-cols-2  md:gap-8 lg:gap-12  justify-between  ">
 
                 <div className="py-4 md:py-2">
-                    <div className="w-full rounded-lg overflow-hidden bg-teal-300  shadow-xl
-                                shadow-slate-700 
-                          hover:scale-105 transition-all duration-500 ">
+                    <div className={styles.imagePortopolio}>
                       <Image src={web1} alt="web1"  />
                     </div>
                 </div>
                 <div className="py-4 md:py-2">
-                    <div className="w-full  rounded-lg bg-teal-300  shadow-xl
-                                shadow-slate-700 
-                          hover:scale-105 transition-all duration-500 overflow-hidden">
+                    <div className={styles.imagePortopolio}>
                       <Image src={web2} alt="web1"/>
                     </div>
                 </div>
             
            
                 <div className="py-4 md:py-2">
-                    <div className="w-full  shadow-xl
-                                shadow-slate-700 
-                          hover:scale-105 transition-all duration-500 overflow-hidden rounded-lg">
+                   <div className={styles.imagePortopolio}>
                       <Image src={web5} alt="web1"   />
                     </div>
                 </div>
 
                 <div className="py-4 md:py-2">
-                    <div className="w-full  shadow-xl
-                                shadow-slate-700 
-                          hover:scale-105 transition-all duration-500 overflow-hidden rounded-lg">
-                      <Image src={web6} alt="web1"   />
-                    </div>
+                  <div className={styles.imagePortopolio}>
+                        <Image src={web6} alt="web1"   />
+                      </div>
                 </div>
                
             </div>
