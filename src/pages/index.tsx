@@ -70,7 +70,7 @@ export default function Home() {
           
           <section className="pb-16">
               <div>
-                <h3 className="text-3xl py-1 font-medium dark:text-white">
+                <h3 className="text-gray-800 mt-2 text-3xl py-1 font-medium dark:text-white">
                   Services I offer
                 </h3>
                 <p className="text-md py-2 leading-6 text-gray-800 dark:text-white">
@@ -82,8 +82,8 @@ export default function Home() {
               <div className="lg:flex gap-6">
                   <div className="p-10 my-10   rounded-lg shadow-xl text-center   hover:bg-teal-500 group dark:bg-white dark:hover:bg-teal-500 ">
                     <Image src={design}  width={100} height={100} alt="design" className="mx-auto" />
-                    <h3 className="text-lg font-medium pt-8 pb-2    group-hover:text-white">Beutiful Designs</h3>
-                    <p className="py-2 group-hover:text-white">Creating elegant designs suited for your needs design theory</p>
+                    <h3 className="text-lg font-medium pt-8 pb-2 text-gray-800 mt-2   group-hover:text-white">Beutiful Designs</h3>
+                    <p className="text-gray-800 mt-2 py-2 group-hover:text-white">Creating elegant designs suited for your needs design theory</p>
                     <h4 className=" text-teal-500 group-hover:text-white">Design tools I use</h4>
                     <p className="text-gray-800 mt-2 group-hover:text-white">React</p>
                     <p className="text-gray-800 mt-2 group-hover:text-white">Figma</p>
@@ -92,8 +92,8 @@ export default function Home() {
 
                   <div className="text-center shadow-xl p-10 rounded-lg my-10  hover:bg-teal-500 group dark:bg-white dark:hover:bg-teal-500 ">
                     <Image src={code}  width={100} height={100} alt="design" className="mx-auto" />
-                    <h3 className="text-lg font-medium pt-8 pb-2  group-hover:text-white">Beutiful Designs</h3>
-                    <p className="py-2 group-hover:text-white">Creating elegant designs suited for your needs design theory</p>
+                    <h3 className="text-gray-800 mt-2 text-lg font-medium pt-8 pb-2  group-hover:text-white">Beutiful Designs</h3>
+                    <p className="text-gray-800 mt-2 py-2 group-hover:text-white">Creating elegant designs suited for your needs design theory</p>
                     <h4 className="text-teal-500 group-hover:text-white">Design tools I use</h4>
                     <p className="text-gray-800 mt-2 group-hover:text-white">React</p>
                     <p className="text-gray-800 mt-2 group-hover:text-white">Figma</p>
@@ -102,8 +102,8 @@ export default function Home() {
               
                   <div className="text-center shadow-xl p-10 rounded-lg my-10 hover:bg-teal-500 group dark:bg-white dark:hover:bg-teal-500">
                     <Image src={consulting}  width={100} height={100} alt="design" className="mx-auto" />
-                    <h3 className="text-lg font-medium pt-8 pb-2">Beutiful Designs</h3>
-                    <p className="py-2  group-hover:text-white">Creating elegant designs suited for your needs design theory</p>
+                    <h3 className="text-gray-800 mt-2text-lg font-medium pt-8 pb-2">Beutiful Designs</h3>
+                    <p className="text-gray-800 mt-2 py-2  group-hover:text-white">Creating elegant designs suited for your needs design theory</p>
                     <h4 className="text-teal-500  group-hover:text-white">Design tools I use</h4>
                     <p className="text-gray-800 mt-2  group-hover:text-white">React</p>
                     <p className="text-gray-800 mt-2  group-hover:text-white">Figma</p>
@@ -116,7 +116,7 @@ export default function Home() {
         
           <section className="pb-32">
               <div className="mb-14">
-                <h3 className="text-3xl py-1 font-medium dark:text-white">
+                <h3 className="text-gray-800 mt-2 text-3xl py-1 font-medium dark:text-white">
                   Portopolio
                 </h3>
                 <p className="text-md py-2 leading-6 text-gray-800 dark:text-white">
