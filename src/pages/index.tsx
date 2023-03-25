@@ -46,7 +46,7 @@ export default function Home() {
               <h2 className={styles.name}>Meyzan Al Yutra</h2>
               <h2 className="text-xl py-2 sm:text-2xl dark:text-white">Developer and designer</h2>
               <p className="text-medium leading-8 text-gray-800 sm:text-xl max-w-2xl mx-auto dark:text-white">
-                Freelancer providing services for programming and design content needs</p>
+                Freelancer providing services for programming and design</p>
             </div>
 
             <div className="mt-10 lg:mt-8 text-4xl gap-6 flex flex-wrap justify-center text-gray-500 dark:text-white">
