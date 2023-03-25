@@ -33,8 +33,7 @@ export default function Home() {
             <div className="text-center pt-20 md:pt-24 lg:pt-28">
               <h2 className={styles.name}>Meyzan Al Yutra</h2>
               <h2 className={styles.devanddesig}>Developer and designer</h2>
-              <p>jksdjsdj</p>
-              {/* <p className={styles.paragraf}>Freelancer providing services for programming and design content needs. join me down below and let"s get cracking</p> */}
+              <p className="text-medium leading-8 text-gray-800 sm:text-xl max-w-2xl mx-auto dark:text-white">Freelancer providing services for programming and design content needs. join me down below and let"s get cracking</p>
             </div>
 
             <div className="mt-10 lg:mt-8 text-4xl gap-6 flex flex-wrap justify-center text-gray-500 dark:text-white">
