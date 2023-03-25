@@ -2,10 +2,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import {BsFillMoonStarsFill} from "react-icons/bs"
+import {useState} from "react"
+import {AiFillLinkedin, AiFillInstagram , AiFillGithub, AiFillMail} from "react-icons/ai"
+import deved from "../../public/dev-ed-wave.png"
 
 export default function Home() {
+  const [darkmode, setDarkMode] = useState(false);
   return (
     <>
       <Head>
@@ -15,108 +18,43 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
+          <section className="min-h-screen pt-10 pb-32">
+            <nav className="flex justify-between">
+              <h1 className="text-xl font-burtons dark:text-white">developyed</h1>
+              <ul className="flex items-center">
+                <li className="dark:text-teal-600">
+                  <BsFillMoonStarsFill className="cursor-pointer text-2xl"  onClick={() => setDarkMode(!darkmode)}/></li>
+                <li>
+                  <a className="bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-lg ml-8" href="#">
+                    Resume</a></li>
+              </ul>
+            </nav>
+
+            <div className="text-center pt-20 md:pt-24 lg:pt-28">
+              <h2 className={styles.name}>Meyzan Al Yutra</h2>
+              <h2 className={styles.devanddesig}>Developer and designer</h2>
+              <p>jksdjsdj</p>
+              {/* <p className={styles.paragraf}>Freelancer providing services for programming and design content needs. join me down below and let"s get cracking</p> */}
+            </div>
+
+            <div className="mt-10 lg:mt-8 text-4xl gap-6 flex flex-wrap justify-center text-gray-500 dark:text-white">
+                <AiFillLinkedin className=" hover:text-teal-600" />
+                <AiFillInstagram  className=" hover:text-teal-600"/>
+                <AiFillGithub className=" hover:text-teal-600"/>
+                <AiFillMail className=" hover:text-teal-600"/>
+            </div>
+
+            
+            <div className="mt-10 lg:mt-8 relative bg-gradient-to-b from-teal-500 rounded-full 
+              w-60 h-60  mx-auto overflow-hidden lg:w-[16rem] lg:h-[16rem]">
               <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
+                // loader={deved}
+                src={deved}
+                alt="Picture of the author"
               />
-            </a>
-          </div>
-        </div>
+            </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
+          </section>
       </main>
     </>
   )
