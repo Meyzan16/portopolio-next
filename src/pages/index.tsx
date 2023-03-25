@@ -44,7 +44,7 @@ export default function Home() {
 
             <div className="text-center pt-20 md:pt-24 lg:pt-28">
               <h2 className={styles.name}>Meyzan Al Yutra</h2>
-              <h2 className="text-xl mt-4 sm:text-2xl dark:text-white">Developer and designer</h2>
+              <h2 className="text-gray-800 text-xl py-2 sm:text-2xl dark:text-white">Developer and designer</h2>
               <p className="text-medium leading-8 text-gray-800 sm:text-xl max-w-2xl mx-auto dark:text-white">
                 Freelancer providing services for programming and design</p>
             </div>
