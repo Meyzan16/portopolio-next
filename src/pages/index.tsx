@@ -34,8 +34,8 @@ export default function Home() {
             <nav className="flex justify-between">
               <h1 className="text-gray-800 text-xl font-burtons dark:text-white">developyed</h1>
               <ul className="flex items-center">
-                <li className="dark:text-teal-600">
-                  <BsFillMoonStarsFill className="text-gray-800 cursor-pointer text-2xl"  onClick={() => setDarkMode(!darkmode)}/></li>
+
+                  <BsFillMoonStarsFill className="text-gray-800 cursor-pointer text-2xl dark:text-teal-600"  onClick={() => setDarkMode(!darkmode)}/>
                 <li>
                   <a className="bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-lg ml-8" href="#">
                     Resume</a></li>
@@ -44,7 +44,7 @@ export default function Home() {
 
             <div className="text-center pt-20 md:pt-24 lg:pt-28">
               <h2 className={styles.name}>Meyzan Al Yutra</h2>
-              <h2 className="text-xl py-2 sm:text-2xl dark:text-white">Developer and designer</h2>
+              <h2 className="text-xl mt-4 sm:text-2xl dark:text-white">Developer and designer</h2>
               <p className="text-medium leading-8 text-gray-800 sm:text-xl max-w-2xl mx-auto dark:text-white">
                 Freelancer providing services for programming and design</p>
             </div>
